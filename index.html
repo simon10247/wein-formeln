@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Wein Formeln</title>
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/849386973730308131/1472664380343844874/faviconWeinFormeln.png?ex=69936515&is=69921395&hm=034a2272297c6dc670d0558ff9b58695b547e7c68f8805462f534f8350748c69&=&format=webp&quality=lossless&width=1008&height=1008">
+    <meta name="keywords" content="Wein, Formeln, Anreicherung">
+    <meta name="description" content="Eine Sammlung an Mathematischen Formeln, deren Beschreibungen und Erklärungen, Rechnern und Beispiel Aufgaben rund um das Thema Wein Fachrechnen.">
+    <meta author="simon102">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #1e113f;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .navigation_bar_ul {
+            position: fixed;
+            width: 98%;
+            display: flex;
+            justify-content: left;
+            list-style-type: none;
+            flex-wrap: wrap;
+            margin: 10px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #170d30;
+        }
+        .navigation_bar_li {
+            float: left;
+        }
+        .navigation_bar_li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navigation_bar_li a:hover {
+            background-color: #06030c;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+        .main {
+        padding: 20px;
+        flex: 0 0 80%;
+        }
+        .right, .left {
+        background-color: #2d195e;
+        padding: 20px;
+        flex: 0 0 10%;
+        }
+        @media screen and (max-width: 800px) {
+        .left, .main, .right {
+            flex: 0 0 100%;
+            min-height: auto;
+            }
+        }
+
+        .decorative_stripe {
+            padding-left: 20px;
+            background-image: linear-gradient(to bottom, var(--stripe_color) 60%, rgba(255,255,255,0) 0%);
+            background-size: 3px 30px;
+            background-repeat: repeat-y;
+        }
+        .stripe {
+             font-weight: bold;
+             font-size: 25px;
+             flex-shrink: 0;
+             width: 30px;
+        }
+        .button {
+            background-color: #170d30;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #06030c;
+        }
+        .input {
+            background-color: #381f77;
+            border: none;
+            color: white;
+            width: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<html>
+<body style="color: white;">
+    <div>
+    <ul class="navigation_bar_ul">
+        <li class="navigation_bar_li"><img src="https://media.discordapp.net/attachments/849386973730308131/1472664380343844874/faviconWeinFormeln.png?ex=69936515&is=69921395&hm=034a2272297c6dc670d0558ff9b58695b547e7c68f8805462f534f8350748c69&=&format=webp&quality=lossless&width=1008&height=1008" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
+        <li class="navigation_bar_li" style="font-weight: bold; font-size: 20px; padding-top: 5px;"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
+        <li class="navigation_bar_li"><a href="">🏠︎ Home</a></li>
+        <li class="navigation_bar_li"><a href=""><span style="font-size: 25px;">𝔁</span> Formeln</a></li>
+        <li class="navigation_bar_li"><a href="">✉ Kontakte</a></li>
+    </ul>
+    </div>
+
+    <div class="left">
+    </div>
+
+    <div class="main">
+        <div> <!-- Title -->
+            <h1 style="margin-top: 70px;">Natürlicher Alkohol</h1>
+        </div>
+
+        <div class="decorative_stripe" style="--stripe_color: aqua;"> <!-- Description -->
+            <h3 class="description">Der natürlicher Alkohol, ist dieser, der sich aus Öchsle und Extrakt des Mostes berechnen lässt.<br>Die Öchsle sind der Zucker, der zu Alkohol vergoren wird und von diesem muss ein teil des zuckerfreien Extrakts abgezogen werden.</h3>
+        </div>
+
+        <div class="decorative_stripe" style="--stripe_color: red;"> <!-- Formula -->
+            <h2>• Formel:</h1>
+            <p class="formula">Oe° * 1,25 - E * 0,5 = nA</p>
+            <pre><br>Oe° = <span style="font-weight: bold;">Öchsle</span> in Oe°<br>E   = <span style="font-weight: bold;">Extrakt</span> in g/l<br>nA  = <span style="font-weight: bold;">natürlicher Alkohol</span><sup title="Für %vol: Geteilt durch 7,89 rechnen." style="color: aqua; font-size: small;">ⓘ</sup> in g/l</pre>
+        </div>
+
+        <div class="decorative_stripe" style="--stripe_color: green;"> <!-- Calculator -->
+            <h2>• Rechner:</h1>
+            <p><input class= "input" type="text" name="oechsle"> °Oe * 1,25 - <input class= "input" type="text" name="extract"> g/l * 0,5 = <input class= "input" type="text" name="alkohol" disabled> g/l</p>
+            <button class="button" onclick="calculateNaturalAlkohol()">Berechnen</button>
+        </div>
+
+        <div class="decorative_stripe" style="--stripe_color: blue;"> <!-- Example Task -->
+            <h2>• Beispiel Aufgabe:</h1>
+            <p class="example task">Du untersuchst deinen Riesling Most, dieser hat 82° Öchsle und eine Extrakt von 21 g/l. Du möchtest eine Alkohol von mindestens 12,5 %vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
+            <button class="button" onclick="document.getElementsByClassName('hidden_awnser')[0].innerHTML = 'Dein Riesling Most hat einen natürlichen Alkohol von <b>92 g/l</b>, dass sind 11,66 %vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5 %vol. zu kommen.'">Lösung Anzeigen</button>
+            <button class="button" onclick="document.getElementsByClassName('hidden_formula')[0].innerHTML = '82° Oe * 1,25 - 21 g/l * 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b>'">Lösungsweg Anzeigen</button>
+            <p class="hidden_awnser">...</p>
+            <pre class="hidden_formula" style="padding-bottom: 10px;">...</pre>
+        </div>
+
+    </div>
+
+    <div class="right">
+    </div>
+</body>
+</html>

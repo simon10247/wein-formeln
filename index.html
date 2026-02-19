@@ -19,7 +19,7 @@
         }
 
         .navigation_bar_ul {
-            position: absolute;
+            position: fixed;
             width: 98%;
             display: flex;
             justify-content: left;
@@ -57,18 +57,22 @@
         padding: 20px;
         flex: 0 0 10%;
         }
+
         @media screen and (max-width: 800px) {
-        .main {
-            flex: 0 0 100%;
-            padding: 15px;
+            .main {
+                flex: 0 0 100%;
+                padding: 15px;
+                }
+            .left, .right {
+                display: none;
+                }
+            .navigation_bar_ul {
+                position: absolute;
             }
-        .left, .right {
-            display: none;
-            }
-        .navigation_bar_li a {
-            padding: 10px 8px;
-            font-size: 16px;
-        }
+            /*.navigation_bar_li a {
+                padding: 10px 8px;
+                font-size: 16px;
+            }*/ /*Makes NavBar on phone smaller*/
         }
 
         .decorative_stripe {

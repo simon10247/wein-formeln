@@ -34,6 +34,7 @@ body {
 }
 .navigation_bar_li a:hover {
     background-color: #06030c;
+    transition: 0.7s;
 }
 
 /*  Layout in General */

@@ -7,109 +7,6 @@
     <meta name="description" content="Eine Sammlung an Mathematischen Formeln, deren Beschreibungen und Erklärungen, Rechnern und Beispiel Aufgaben rund um das Thema Oenologisches Fachrechnen.">
     <meta author="simon102">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <style>
-        body {
-            background-color: #1e113f;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0;
-            min-height: 100vh;
-        }
-
-        .navigation_bar_ul {
-            position: fixed;
-            width: 98%;
-            display: flex;
-            justify-content: left;
-            list-style-type: none;
-            flex-wrap: wrap;
-            margin: 10px;
-            padding: 0;
-            overflow: hidden;
-            background-color: #170d30;
-        }
-        .navigation_bar_li {
-            float: left;
-        }
-        .navigation_bar_li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            height: 100%;
-        }
-        .navigation_bar_li a:hover {
-            background-color: #06030c;
-        }
-
-        * {
-        box-sizing: border-box;
-        }
-        .main {
-        padding: 20px;
-        flex: 0 0 80%;
-        }
-        .right, .left {
-        background-color: #2d195e;
-        padding: 20px;
-        flex: 0 0 10%;
-        }
-
-        @media screen and (max-width: 800px) {
-            .main {
-                flex: 0 0 100%;
-                padding: 15px;
-                }
-            .left, .right {
-                display: none;
-                }
-            .navigation_bar_ul {
-                position: absolute;
-            }
-            /*.navigation_bar_li a {
-                padding: 10px 8px;
-                font-size: 16px;
-            }*/ /*Makes NavBar on phone smaller*/
-        }
-
-        .decorative_stripe {
-            padding-left: 20px;
-            background-image: linear-gradient(to bottom, var(--stripe_color) 60%, rgba(255,255,255,0) 0%);
-            background-size: 3px 30px;
-            background-repeat: repeat-y;
-        }
-        .stripe {
-             font-weight: bold;
-             font-size: 25px;
-             flex-shrink: 0;
-             width: 30px;
-        }
-        .button {
-            background-color: #170d30;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #06030c;
-        }
-        .input {
-            background-color: #381f77;
-            border: none;
-            color: white;
-            width: 30px;
-            font-size: 20px;
-        }
-    </style>
 </head>
 
 <html>
@@ -139,7 +36,7 @@
         <div class="decorative_stripe" style="--stripe_color: red;"> <!-- Formula -->
             <h2>• Formel:</h1>
             <p class="formula">Oe° * 1,25 - E * 0,5 = nA</p>
-            <pre><br>Oe° = <span style="font-weight: bold;">Öchsle</span> in Oe°<br>E   = <span style="font-weight: bold;">Extrakt</span> in g/l<br>nA  = <span style="font-weight: bold;">natürlicher Alkohol</span><sup title="Für %vol: Geteilt durch 7,89 rechnen." style="color: aqua; font-size: small;">ⓘ</sup> in g/l</pre>
+            <pre><br>Oe° = <span class="keyword">Öchsle</span> in Oe°<br>E   = <span class="keyword">Extrakt</span> in g/l<br>nA  = <span class="keyword">natürlicher Alkohol</span><sup title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</sup> in g/l</pre>
         </div>
 
         <div class="decorative_stripe" style="--stripe_color: green;"> <!-- Calculator -->
@@ -150,7 +47,7 @@
 
         <div class="decorative_stripe" style="--stripe_color: blue;"> <!-- Example Task -->
             <h2>• Beispiel Aufgabe:</h1>
-            <p class="example task">Du untersuchst deinen Riesling Most, dieser hat 82° Öchsle und eine Extrakt von 21 g/l. Du möchtest eine Alkohol von mindestens 12,5 %vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
+            <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82° Öchsle und eine Extrakt von 21 g/l. Du möchtest eine Alkohol von mindestens 12,5 %vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button" onclick="document.getElementsByClassName('hidden_awnser')[0].innerHTML = 'Dein Riesling Most hat einen natürlichen Alkohol von <b>92 g/l</b>, dass sind 11,66 %vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5 %vol. zu kommen.'">Lösung Anzeigen</button>
             <button class="button" onclick="document.getElementsByClassName('hidden_formula')[0].innerHTML = '82° Oe * 1,25 - 21 g/l * 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b>'">Lösungsweg Anzeigen</button>
             <p class="hidden_awnser"></p>

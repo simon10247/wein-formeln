@@ -1,0 +1,112 @@
+body {
+    background-color: #1e113f;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navigation_bar_ul {
+    position: fixed;
+    width: 98%;
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #170d30;
+}
+.navigation_bar_li {
+    float: left;
+}
+.navigation_bar_li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 100%;
+}
+.navigation_bar_li a:hover {
+    background-color: #06030c;
+}
+
+/*  Layout in General */
+* {
+box-sizing: border-box;
+}
+.main {
+padding: 20px;
+flex: 0 0 80%;
+}
+.right, .left {
+background-color: #2d195e;
+padding: 20px;
+flex: 0 0 10%;
+}
+
+/* Layout change for Phone*/
+@media screen and (max-width: 800px) {
+    .main {
+        flex: 0 0 100%;
+        padding: 15px;
+        }
+    .left, .right {
+        display: none;
+        }
+    .navigation_bar_ul {
+        position: absolute;
+    }
+    /*.navigation_bar_li a {
+        padding: 10px 8px;
+        font-size: 16px;
+    }*/ /*Makes NavBar on phone smaller*/
+}
+
+/* General */
+.decorative_stripe {
+    padding-left: 20px;
+    background-image: linear-gradient(to bottom, var(--stripe_color) 60%, rgba(255,255,255,0) 0%);
+    background-size: 3px 30px;
+    background-repeat: repeat-y;
+}
+.stripe {
+    font-weight: bold;
+    font-size: 25px;
+    flex-shrink: 0;
+    width: 30px;
+}
+.button {
+    background-color: #170d30;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #06030c;
+}
+.input {
+    background-color: #381f77;
+    border: none;
+    color: white;
+    width: 30px;
+    font-size: 20px;
+}
+.keywords {
+    font-weight: bold;
+}
+.info {
+    color: aqua;
+    font-size: small;
+}

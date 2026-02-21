@@ -19,6 +19,7 @@ body {
     margin: 10px;
     padding: 0;
     overflow: hidden;
+    border-radius: 10px;
     background-color: #170d30;
 }
 .navigation_bar_li {
@@ -93,7 +94,7 @@ flex: 0 0 10%;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: 0.7s;
 }
 .button:hover {

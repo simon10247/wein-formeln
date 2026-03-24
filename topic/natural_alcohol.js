@@ -1,5 +1,4 @@
 function calculation() {
-    
     let oechsle = document.getElementById('oechsle').innerText;
     let extract = document.getElementById('extract').innerText;
     let naturalAlkohol;
@@ -9,7 +8,7 @@ function calculation() {
 
     naturalAlkohol = oechsle * 1.25 - extract * 0.5;
 
-    naturalAlkohol = String(naturalAlkohol).replace(".", ",");
+    let naturalAlkoholText = String(naturalAlkohol).replace(".", ",");
 
-    document.getElementById('natural_alkohol').innerText = naturalAlkohol;
+    document.getElementById('natural_alkohol').innerText = naturalAlkoholText;
 }

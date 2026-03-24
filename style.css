@@ -209,6 +209,17 @@ flex: 0 0 10%;
     padding-left: 5px;
     padding-right: 5px;
 }
+/* Fix for the bug where on Firefox input spans are displayed shifted upward */
+.input_span:empty::before {
+    content: "\feff"; /* This is a Zero Width Non-Breaking Space */
+    display: inline-block;
+    width: 0;
+}
+.input_span { 
+    display: inline-block;
+    vertical-align: bottom;
+}
+/* Fix ends here */
 .keyword {
     font-weight: bold;
 }

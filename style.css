@@ -127,16 +127,16 @@ body {
 /* ---------------------------------------------------------------- Background Divs + Card */
 
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .main {
-padding: 20px;
-flex: 0 0 80%;
+    padding: 20px;
+    flex: 0 0 80%;
 }
 .right, .left {
-background-color: var(--secondary_background_color);
-padding: 20px;
-flex: 0 0 10%;
+    background-color: var(--secondary_background_color);
+    padding: 20px;
+    flex: 0 0 10%;
 }
 .card_view {
     background-color: var(--card_color);

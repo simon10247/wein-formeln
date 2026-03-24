@@ -24,14 +24,14 @@
         </div>
 
         <div class="card_view" id="formula_card"> <!-- Formula -->
-            <h2>• Formel:</h2>
-            <p class="formula">°Oe * 1,25 - E * 0,5 = nA</p>
+            <h2>• Formel:</h2> <!-- Symbols: + - × ÷ -->
+            <p class="formula">°Oe × 1,25 - E × 0,5 = nA</p>
             <pre class="horizontal_scroll monospace" style="margin-top: 20px;"><span class="keyword">°Oe</span> = <span class="keyword">Öchsle</span> in °Oe<br><span class="keyword">E</span>   = <span class="keyword">Extrakt</span> in g/l<br><span class="keyword">nA</span>  = <span class="keyword">natürlicher Alkohol</span><a href="" title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</a> in g/l</pre>
         </div>
 
         <div class="card_view" id="calculator_card"> <!-- Calculator -->
             <h2>• Rechner:</h2>
-            <p class="horizontal_scroll"><span class="input input_span" id="oechsle"></span> °Oe * 1,25 - <span class="input input_span" id="extract"></span> g/l * 0,5 = <span class="input" id="natural_alkohol">&nbsp;</span> g/l</p>
+            <p class="horizontal_scroll"><span class="input input_span" id="oechsle"></span> °Oe × 1,25 - <span class="input input_span" id="extract"></span> g/l × 0,5 = <span class="input" id="natural_alkohol">&nbsp;</span> g/l</p>
             <button class="button" onclick="calculation()">Berechnen</button>
         </div>
 
@@ -41,7 +41,7 @@
             <button class="button button_awnser" onclick="show_text('hidden_awnser', 'button_awnser')">Lösung Anzeigen</button>
             <button class="button button_formula" onclick="show_text('hidden_formula', 'button_formula')">Lösungsweg Anzeigen</button>
             <p class="hidden_awnser hidden_text">Dein Riesling Most hat einen natürlichen Alkohol von <b>92&nbsp;g/l</b>, dass sind 11,66&nbsp;%vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5&nbsp;%vol. zu kommen.</p>
-            <pre class="hidden_formula hidden_text horizontal_scroll monospace" style="padding-bottom: 10px;">82° Oe * 1,25 - 21 g/l * 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b></pre>
+            <pre class="hidden_formula hidden_text horizontal_scroll monospace" style="padding-bottom: 10px;">82° Oe × 1,25 - 21 g/l × 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b></pre>
         </div>
     </div>
 

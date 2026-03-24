@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
             </li>
             <li class="navigation_bar_right navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/paintbrush.png" alt="Paintbrush Icone"></a>
                 <ul class="navigation_bar_dropdown_content_right navigation_bar_dropdown_content">
-                    <li><a href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
-                    <li><a href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
-                    <li><a href="javascript:void(0)" onclick="setTheme('purple')">Purple Theme</a></li>
+                    <li><a class="navigation_bar_dropdown_theme" href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
+                    <li><a class="navigation_bar_dropdown_theme" href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
+                    <li><a class="navigation_bar_dropdown_theme" href="javascript:void(0)" onclick="setTheme('purple')">Purple Theme</a></li>
                     <li class="navigation_bar_dropdown_devider"></li>
                     <li><a href="javascript:void(0)" onclick="setAccent('vibrant')"><img class="navigation_bar_icon" src="icon/accent/vibrant.png" alt="Vibrant Accent Color Icone">Vibrant Accent</a></li>
                     <li><a href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>

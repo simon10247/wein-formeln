@@ -134,14 +134,14 @@ function setTheme(theme) {
         root.style.setProperty('--title_color', '#2b2341');
         root.style.setProperty('--text_color', '#ffffff');
     } else if (theme === "dark") {
-        root.style.setProperty('--main_background_color', '#292929');
-        root.style.setProperty('--secondary_background_color', '#494949');
-        root.style.setProperty('--widget_color', '#303030');
-        root.style.setProperty('--widget_hover_color', '#1b1b1b');
-        root.style.setProperty('--widget_color_2', '#858585');
-        root.style.setProperty('--card_color', '#494949');
-        root.style.setProperty('--title_color', '#ffffff');
-        root.style.setProperty('--text_color', '#ffffff');
+        root.style.setProperty('--main_background_color', 'rgb(9, 9, 9)');
+        root.style.setProperty('--secondary_background_color', 'rgb(7, 7, 7)');
+        root.style.setProperty('--widget_color', 'rgb(17, 17, 17)');
+        root.style.setProperty('--widget_hover_color', 'rgb(35, 35, 35)');
+        root.style.setProperty('--widget_color_2', 'rgb(20, 20, 20)');
+        root.style.setProperty('--card_color', 'rgb(25, 25, 25)');
+        root.style.setProperty('--title_color', 'rgb(255, 255, 255)');
+        root.style.setProperty('--text_color', 'rgb(255, 255, 255)');
     } else if (theme === "purple") {
         root.style.setProperty('--main_background_color', '#1E113F');
         root.style.setProperty('--secondary_background_color', '#2B1859');

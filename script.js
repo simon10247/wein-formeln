@@ -76,6 +76,16 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
         inputSpan.setAttribute('contenteditable', 'true'); // Also injects the attribute
     })
 
+    let result = document.querySelectorAll('.result_span'); // Selects all inputs and puts them into a var
+    result.forEach(result => { // Loops through each input
+        result.addEventListener('keydown', (event) => { // Triggers when a key is pressed)
+            if ((event.ctrlKey) && (event.key === 'c' || event.key === 'a')) { // If ctrl+C is pressed
+            return; // Don't do anything
+            }
+            event.preventDefault(); // Prevents the key from being pressed
+        })
+    })
+
     // TURN DROPDOWN INTO A TOGGLE
     let dropdowns = document.querySelectorAll('.navigation_bar_dropdown'); // Selects all dropdowns and puts them into a var
     dropdowns.forEach(dropdown => { // Loops through each dropdown

@@ -19,24 +19,24 @@
     <div class="main">
         <h1 class="title">Natürlicher Alkohol</h1> <!-- Title -->
 
-        <div class="card_view" id="description_card"> <!-- Description -->
-            <h3 class="description">Der natürlicher Alkohol ist der Alkohol der bei der Gärung aus dem natürlich in der Traube vorhanden Zucker entsteht.<br>Er lässt sich aus den Öchsle unter dem Abzug des Extraktes berechnen.</h3>
+        <div class="card_view description_card_accent"> <!-- Description -->
+            <h3 class="description">Der <span class="description_accent">natürlicher Alkohol</span> ist der Alkohol der bei der Gärung aus dem natürlich in der Traube vorhanden Zucker entsteht.<br>Er lässt sich aus den Öchsle unter dem Abzug des Extraktes berechnen.</h3>
         </div>
 
-        <div class="card_view" id="formula_card"> <!-- Formula -->
-            <h2>• Formel:</h2> <!-- Symbols: + - × ÷ -->
+        <div class="card_view formula_card_accent"> <!-- Formula -->
+            <h2 class="formula_accent">• Formel:</h2> <!-- Symbols: + - × ÷ -->
             <p class="formula">°Oe × 1,25 - E × 0,5 = nA</p>
             <pre class="horizontal_scroll monospace" style="margin-top: 20px;"><span class="keyword">°Oe</span> = <span class="keyword">Öchsle</span> in °Oe<br><span class="keyword">E</span>   = <span class="keyword">Extrakt</span> in g/l<br><span class="keyword">nA</span>  = <span class="keyword">natürlicher Alkohol</span><a href="" title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</a> in g/l</pre>
         </div>
 
-        <div class="card_view" id="calculator_card"> <!-- Calculator -->
-            <h2>• Rechner:</h2>
+        <div class="card_view calculator_card_accent"> <!-- Calculator -->
+            <h2 class="calculator_accent">• Rechner:</h2>
             <p class="horizontal_scroll"><span class="input input_span" id="oechsle">&#8203;</span> °Oe × 1,25 - <span class="input input_span" id="extract">&#8203;</span> g/l × 0,5 = <span class="input input_span result_span" id="natural_alkohol">&#8203;</span> g/l</p>
             <button class="button" onclick="calculation()">Berechnen</button>
         </div>
 
-        <div class="card_view" id="example_task_card"> <!-- Example Task -->
-            <h2>• Beispiel Aufgabe:</h2>
+        <div class="card_view example_task_card_accent"> <!-- Example Task -->
+            <h2 class="example_task_accent">• Beispiel Aufgabe:</h2>
             <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82°&nbsp;Öchsle und eine Extrakt von 21&nbsp;g/l. Du möchtest eine Alkohol von mindestens 12,5&nbsp;%vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button button_awnser" onclick="show_text('hidden_awnser', 'button_awnser')">Lösung Anzeigen</button>
             <button class="button button_formula" onclick="show_text('hidden_formula', 'button_formula')">Lösungsweg Anzeigen</button>

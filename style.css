@@ -154,17 +154,30 @@ body {
     margin-right: auto;
 }
 
-#description_card {
+.description_card_accent {
     --stripe_color: var(--accent_card_color);
 }
-#formula_card {
+.formula_card_accent {
     --stripe_color: var(--accent_card_color_2);
 }
-#calculator_card {
+.calculator_card_accent {
     --stripe_color: var(--accent_card_color_3);
 }
-#example_task_card {
+.example_task_card_accent {
     --stripe_color: var(--accent_card_color_4);
+}
+
+.description_accent {
+    color: var(--accent_card_color);
+}
+.formula_accent {
+    color: var(--accent_card_color_2);
+}
+.calculator_accent {
+    color: var(--accent_card_color_3);
+}
+.example_task_accent {
+    color: var(--accent_card_color_4);
 }
 
 /* ---------------------------------------------------------------- General Stuff */

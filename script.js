@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
                     <li class="navigation_bar_dropdown_devider"></li>
                     <li><a href="javascript:void(0)" onclick="setAccent('vibrant')"><img class="navigation_bar_icon" src="icon/accent/vibrant.png" alt="Vibrant Accent Color Icone">Vibrant Accent</a></li>
                     <li><a href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>
-                    <li><a href="javascript:void(0)" onclick="setAccent('gray')"><img class="navigation_bar_icon" src="icon/accent/gray.png" alt="Vibrant Accent Color Icone">Gray Accent</a></li>
+                    <li><a href="javascript:void(0)" onclick="setAccent('cmy')"><img class="navigation_bar_icon" src="icon/accent/cmy.png" alt="Vibrant Accent Color Icone">Alternativ Accent</a></li>
                 </ul>
             </li>
         </ul>`;
@@ -178,11 +178,11 @@ function setAccent(accent) {
         root.style.setProperty('--accent_card_color_2', 'crimson');
         root.style.setProperty('--accent_card_color_3', 'limegreen');
         root.style.setProperty('--accent_card_color_4', 'dodgerblue');
-    } else if (accent === "gray") {
-        root.style.setProperty('--accent_card_color', '#ffffff');
-        root.style.setProperty('--accent_card_color_2', '#a8a8a8');
-        root.style.setProperty('--accent_card_color_3', '#545454');
-        root.style.setProperty('--accent_card_color_4', '#000000');
+    } else if (accent === "cmy") {
+        root.style.setProperty('--accent_card_color', 'limegreen');
+        root.style.setProperty('--accent_card_color_2', 'cyan');
+        root.style.setProperty('--accent_card_color_3', 'magenta');
+        root.style.setProperty('--accent_card_color_4', 'yellow');
     }
 }
 

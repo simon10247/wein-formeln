@@ -6,6 +6,7 @@
     --widget_color: #180E33;                    /* Navigation Bar and Button*/
     --widget_hover_color: #06030C;              /* Navigation Bar Hover */
     --widget_color_2: #3C2180;                  /* Input and Button Hover*/
+    --widget_color_3: #261550;                  /* Result Input*/
     --card_color: #0f0920;                      /* Card Background */
     --title_color: #ffffff;                     /* Title Color */
     --text_color: #ffffff;                      /* Text Color */
@@ -227,7 +228,7 @@ body {
     padding-right: 5px;
 }
 .result {
-    background-color: var(--widget_color);
+    background-color: var(--widget_color_3) !important;
 }
 .keyword {
     font-weight: bold;

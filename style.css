@@ -155,6 +155,11 @@ body {
     margin-right: auto;
 }
 
+.description {
+    font-size: 23px;
+    font-weight: bold;
+}
+
 .description_card_accent {
     --stripe_color: var(--accent_card_color);
 }

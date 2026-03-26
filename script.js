@@ -148,8 +148,8 @@ function setTheme(theme) {
         root.style.setProperty('--main_background_color', 'rgb(9, 9, 9)');
         root.style.setProperty('--secondary_background_color', 'rgb(7, 7, 7)');
         root.style.setProperty('--widget_color', 'rgb(15, 15, 15)');
-        root.style.setProperty('--widget_hover_color', 'rgb(255, 0, 200)');
-        root.style.setProperty('--widget_color_2', 'rgb(20, 20, 20)');
+        root.style.setProperty('--widget_hover_color', 'rgb(30, 30, 30)');
+        root.style.setProperty('--widget_color_2', 'rgb(45, 45, 45)');
         root.style.setProperty('--widget_color_3', 'rgb(15, 15, 15)');
         root.style.setProperty('--card_color', 'rgb(25, 25, 25)');
         root.style.setProperty('--title_color', 'rgb(255, 255, 255)');

@@ -132,6 +132,9 @@ body {
     flex: 1;
     flex-direction: column;
     align-items: center;
+    padding-top: 90px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 .card_view {
     background-color: var(--card_color);

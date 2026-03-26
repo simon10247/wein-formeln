@@ -162,7 +162,7 @@ function setTheme(theme) {
         root.style.setProperty('--widget_color_2', '#361e72');
         root.style.setProperty('--widget_color_3', '#2c195c');
         root.style.setProperty('--card_color', '#0f0920');
-        root.style.setProperty('--title_color', '#0000ffffff00');
+        root.style.setProperty('--title_color', '#ffffff');
         root.style.setProperty('--text_color', '#ffffff');
     }
 }

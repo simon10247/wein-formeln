@@ -139,7 +139,7 @@ function setTheme(theme) {
         root.style.setProperty('--secondary_background_color', '#ffffff');
         root.style.setProperty('--widget_color', '#413561');
         root.style.setProperty('--widget_hover_color', '#2b2341');
-        root.style.setProperty('--widget_color_2', '#3C2180');
+        root.style.setProperty('--widget_color_2', '#8775b9');
         root.style.setProperty('--widget_color_3', '#7c6baa');
         root.style.setProperty('--card_color', '#604d92');
         root.style.setProperty('--title_color', '#2b2341');

@@ -159,7 +159,7 @@ function setTheme(theme) {
         root.style.setProperty('--secondary_background_color', '#2B1859');
         root.style.setProperty('--widget_color', '#180E33');
         root.style.setProperty('--widget_hover_color', '#06030C');
-        root.style.setProperty('--widget_color_2', '#3C2180');
+        root.style.setProperty('--widget_color_2', '#2f1a64');
         root.style.setProperty('--widget_color_3', '#2c195c');
         root.style.setProperty('--card_color', '#0f0920');
         root.style.setProperty('--title_color', '#0000ffffff00');

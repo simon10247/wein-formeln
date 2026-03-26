@@ -139,7 +139,7 @@ function setTheme(theme) {
         root.style.setProperty('--secondary_background_color', '#ffffff');
         root.style.setProperty('--widget_color', '#413561');
         root.style.setProperty('--widget_hover_color', '#2b2341');
-        root.style.setProperty('--widget_color_2', '#ab94e6');
+        root.style.setProperty('--widget_color_2', '#3C2180');
         root.style.setProperty('--widget_color_3', '#7c6baa');
         root.style.setProperty('--card_color', '#604d92');
         root.style.setProperty('--title_color', '#2b2341');
@@ -148,7 +148,7 @@ function setTheme(theme) {
         root.style.setProperty('--main_background_color', 'rgb(9, 9, 9)');
         root.style.setProperty('--secondary_background_color', 'rgb(7, 7, 7)');
         root.style.setProperty('--widget_color', 'rgb(15, 15, 15)');
-        root.style.setProperty('--widget_hover_color', 'rgb(85, 85, 85)');
+        root.style.setProperty('--widget_hover_color', 'rgb(255, 0, 200)');
         root.style.setProperty('--widget_color_2', 'rgb(20, 20, 20)');
         root.style.setProperty('--widget_color_3', 'rgb(15, 15, 15)');
         root.style.setProperty('--card_color', 'rgb(25, 25, 25)');
@@ -159,7 +159,7 @@ function setTheme(theme) {
         root.style.setProperty('--secondary_background_color', '#2B1859');
         root.style.setProperty('--widget_color', '#180E33');
         root.style.setProperty('--widget_hover_color', '#06030C');
-        root.style.setProperty('--widget_color_2', '#2f1a64');
+        root.style.setProperty('--widget_color_2', '#361e72');
         root.style.setProperty('--widget_color_3', '#2c195c');
         root.style.setProperty('--card_color', '#0f0920');
         root.style.setProperty('--title_color', '#0000ffffff00');

@@ -39,33 +39,33 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
     box.innerHTML = `
         <ul class="navigation_bar_ul">
             <li class="navigation_bar_left"><img src="faviconWeinFormeln.png" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
-            <li class="navigation_bar_left navigation_bar_title"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
-            <li class="navigation_bar_left hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/home.png" alt="Home Icone">Home</a></li>
-            <li class="navigation_bar_left navigation_bar_dropdown hide_on_phone">
+            <li class="navigation_bar_left navigation_bar_title"><a href="">Wein-Formeln.de</a></li>
+            <li class="navigation_bar_left navigation_bar_hover hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/home.png" alt="Home Icone">Home</a></li>
+            <li class="navigation_bar_left navigation_bar_hover navigation_bar_dropdown hide_on_phone">
                 <a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/math.png" alt="Calculation Icone">Formeln</a>
                 <ul class="navigation_bar_dropdown_content">
-                    <li><a href="">• Natürlicher Alkohol</a></li>
-                    <li><a href="">• Anreicherung</a></li>
-                    <li><a href="">• [Drittes Thema hier]</a></li>
+                    <li><a class="navigation_bar_hover" href="">• Natürlicher Alkohol</a></li>
+                    <li><a class="navigation_bar_hover" href="">• Anreicherung</a></li>
+                    <li><a class="navigation_bar_hover" href="">• [Drittes Thema hier]</a></li>
                 </ul>
             </li>
-            <li class="navigation_bar_left hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
-            <li class="navigation_bar_left navigation_bar_dropdown show_on_phone"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/menu.png" alt="Menu Icone"></a>
+            <li class="navigation_bar_left navigation_bar_hover hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
+            <li class="navigation_bar_left navigation_bar_hover navigation_bar_dropdown show_on_phone"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/menu.png" alt="Menu Icone"></a>
                 <ul class="navigation_bar_dropdown_content">
-                    <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/home.png" alt="Home Icone">Home</a></li>
-                    <li class="navigation_bar_left navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/math.png" alt="Calculation Icone">Formeln</a></li>
-                    <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
+                    <li class="navigation_bar_left navigation_bar_hover"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/home.png" alt="Home Icone">Home</a></li>
+                    <li class="navigation_bar_left navigation_bar_hover navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/math.png" alt="Calculation Icone">Formeln</a></li>
+                    <li class="navigation_bar_left navigation_bar_hover"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
                 </ul>
             </li>
-            <li class="navigation_bar_right navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/paintbrush.png" alt="Paintbrush Icone"></a>
+            <li class="navigation_bar_right navigation_bar_hover navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icon/navigation_bar/paintbrush.png" alt="Paintbrush Icone"></a>
                 <ul class="navigation_bar_dropdown_content_right navigation_bar_dropdown_content">
-                    <li><a class="navigation_bar_dropdown_theme" href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
-                    <li><a class="navigation_bar_dropdown_theme" href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
-                    <li><a class="navigation_bar_dropdown_theme" href="javascript:void(0)" onclick="setTheme('purple')">Purple Theme</a></li>
+                    <li><a class="navigation_bar_dropdown_theme navigation_bar_hover" href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
+                    <li><a class="navigation_bar_dropdown_theme navigation_bar_hover" href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
+                    <li><a class="navigation_bar_dropdown_theme navigation_bar_hover" href="javascript:void(0)" onclick="setTheme('purple')">Purple Theme</a></li>
                     <li class="navigation_bar_dropdown_devider"></li>
-                    <li><a href="javascript:void(0)" onclick="setAccent('vibrant')"><img class="navigation_bar_icon" src="icon/accent/vibrant.png" alt="Vibrant Accent Color Icone">Vibrant Accent</a></li>
-                    <li><a href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>
-                    <li><a href="javascript:void(0)" onclick="setAccent('cmy')"><img class="navigation_bar_icon" src="icon/accent/cmy.png" alt="Vibrant Accent Color Icone">Alternativ Accent</a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('vibrant')"><img class="navigation_bar_icon" src="icon/accent/vibrant.png" alt="Vibrant Accent Color Icone">Vibrant Accent</a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('cmy')"><img class="navigation_bar_icon" src="icon/accent/cmy.png" alt="Vibrant Accent Color Icone">Alternativ Accent</a></li>
                 </ul>
             </li>
         </ul>`;

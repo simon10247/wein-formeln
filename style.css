@@ -126,7 +126,9 @@ body {
 }
 
 /* ---------------------------------------------------------------- Background Divs + Card */
-
+* {
+    box-sizing: border-box;
+}
 .main {
     display: flex;
     flex: 1;
@@ -257,16 +259,12 @@ body {
         padding: 15px;
         min-width: 0;
     }
-    .left, .right {
-        display: none;
-    }
     .card_view {
         width: 100%;
         overflow: hidden;
     }
     .title {
         margin-top: 90px;
-        margin-bottom: -10px;
         padding-left: 0;
         font-size: 35px;
         text-align: center;

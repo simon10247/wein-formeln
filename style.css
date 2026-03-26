@@ -21,7 +21,7 @@ body {
     color: var(--text_color);
     background-color: var(--main_background_color);
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -126,6 +126,7 @@ body {
 }
 
 /* ---------------------------------------------------------------- Background Divs + Card */
+
 * {
     box-sizing: border-box;
 }
@@ -241,7 +242,7 @@ body {
     text-decoration: none;
 }
 .monospace {
-    font-family: "Libertinus Mono", monospace;
+    font-family: "Segoe UI Mono", monospace;
     font-size: 18px;
     font-style: normal;
     line-height: 1.4;

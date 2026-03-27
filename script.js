@@ -188,6 +188,7 @@ function setAccent(accent) {
         root.style.setProperty('--accent_card_color_4', 'yellow');
     }
 }
+
 let commaOrDot = "";
 function commaToDot(text) {
     commaOrDot = "";

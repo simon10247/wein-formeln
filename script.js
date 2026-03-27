@@ -188,11 +188,13 @@ function setAccent(accent) {
         root.style.setProperty('--accent_card_color_4', 'yellow');
     }
 }
-
+let commaOrDot = "";
 function commaToDot(text) {
-    let commaOrDot = "";
+    commaOrDot = "";
     text = String(text);
-    if (text.includes(",")) {commaOrDot = ","}
+    if (text.includes(",")) {
+        commaOrDot = ","
+    }
     text = text.replace(",", ".");
     text = Number(text);
     return text;

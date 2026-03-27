@@ -9,7 +9,9 @@ function calculation() {
 
     naturalAlkohol = oechsle * 1.25 - extract * 0.5;
 
-    naturalAlkohol = String(naturalAlkohol).replace(".", ",");
+    if (commaOrDot === ",") {
+        naturalAlkohol = String(naturalAlkohol).replace(".", ",");
+    }
 
     document.getElementById('natural_alkohol').innerText = naturalAlkohol;
 }

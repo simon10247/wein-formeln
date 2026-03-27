@@ -190,7 +190,9 @@ function setAccent(accent) {
 }
 
 function commaToDot(text) {
+    let commaOrDot = "";
     text = String(text);
+    if (text.includes(",")) {commaOrDot = ","}
     text = text.replace(",", ".");
     text = Number(text);
     return text;

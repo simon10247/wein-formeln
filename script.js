@@ -193,9 +193,7 @@ let commaOrDot = "";
 function commaToDot(text) {
     commaOrDot = "";
     text = String(text);
-    if (text.includes(",")) {
-        commaOrDot = ","
-    }
+    if (text.includes(",")) {commaOrDot = ","}
     text = text.replace(",", ".");
     text = Number(text);
     return text;

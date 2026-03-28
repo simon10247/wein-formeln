@@ -222,12 +222,15 @@ body {
     border: none;
     color: var(--text_color);
     display: inline-block;
+    vertical-align: bottom;
     min-width: 30px;
     font-size: 20px;
     text-align: center;
     padding-bottom: 0;
     padding-left: 5px;
     padding-right: 5px;
+    line-height: 1.2;
+    margin: 0 2px;
 }
 .result {
     background-color: var(--widget_color_3) !important;

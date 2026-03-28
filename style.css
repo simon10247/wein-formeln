@@ -1,3 +1,20 @@
+/*
+
+COLORS FOR COLORCODEING
+
+1. Yellow:     ECFF2B
+2. Light Blue: 3AE4FF
+3. Pink:       FF46FF
+4. Orange:     FF6500
+5. Green:      33FF42
+6. Purple:     BE8FFF
+7. Red:        FF3A37
+8. Teal:       7CFF9F
+9. Blue:       6668FF
+
+
+*/
+
 :root {
     --main_background_color: #1E113F;           /* Main Background */
     --secondary_background_color: #2B1859;      /* Side Background (Left and Right) */

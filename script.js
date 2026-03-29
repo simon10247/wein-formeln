@@ -63,9 +63,11 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
                     <li><a class="navigation_bar_dropdown_theme navigation_bar_hover" href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
                     <li><a class="navigation_bar_dropdown_theme navigation_bar_hover" href="javascript:void(0)" onclick="setTheme('purple')">Purple Theme</a></li>
                     <li class="navigation_bar_dropdown_devider"></li>
-                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('vibrant')"><img class="navigation_bar_icon" src="icon/accent/vibrant.png" alt="Vibrant Accent Color Icone">Vibrant Accent</a></li>
-                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>
-                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('cmy')"><img class="navigation_bar_icon" src="icon/accent/cmy.png" alt="Vibrant Accent Color Icone">Alternativ Accent</a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('vibrant')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/accent/vibrant.png" alt="Vibrant Accent Color Icone">Vibrant Accent</a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('cmy')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/accent/cmy.png" alt="Vibrant Accent Color Icone">Alternativ Accent</a></li>
+                    <li class="navigation_bar_dropdown_devider"></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="highlight('highlight_on')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/navigation_bar/text_marker.png" alt="Text Marker Icone">Highlight</a></li>
                 </ul>
             </li>
         </ul>`;

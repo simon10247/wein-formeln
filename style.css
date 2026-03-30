@@ -40,6 +40,8 @@ COLORS FOR COLORCODEING
     --highlight_color_7: #FF3A37;
     --highlight_color_8: #7CFF9F;
     --highlight_color_9: #6668FF;
+
+    --highlight_text_color: #000000;
 }
 
 body {
@@ -153,6 +155,68 @@ body {
     padding-right: 3px;
 }
 
+/* ----------------------------------------------------------------  Highlighted Text */
+
+.highlight_1 {
+    color: var(--highlight_color_1);
+}
+.highlight_2 {
+    color: var(--highlight_color_2);
+}
+.highlight_3 {
+    color: var(--highlight_color_3);
+}
+.highlight_4 {
+    color: var(--highlight_color_4);
+}
+.highlight_5 {
+    color: var(--highlight_color_5);
+}
+.highlight_6 {
+    color: var(--highlight_color_6);
+}
+.highlight_7 {
+    color: var(--highlight_color_7);
+}
+.highlight_8 {
+    color: var(--highlight_color_8);
+}
+.highlight_9 {
+    color: var(--highlight_color_9);
+}
+
+.highlight_input_1 {
+    background-color: var(--highlight_color_1) !important;
+}
+.highlight_input_2 {
+    background-color: var(--highlight_color_2) !important;
+}
+.highlight_input_3 {
+    background-color: var(--highlight_color_3) !important;
+}
+.highlight_input_4 {
+    background-color: var(--highlight_color_4) !important;
+}
+.highlight_input_5 {
+    background-color: var(--highlight_color_5) !important;
+}
+.highlight_input_6 {
+    background-color: var(--highlight_color_6) !important;
+}
+.highlight_input_7 {
+    background-color: var(--highlight_color_7) !important;
+}
+.highlight_input_8 {
+    background-color: var(--highlight_color_8) !important;
+}
+.highlight_input_9 {
+    background-color: var(--highlight_color_9) !important;
+}
+
+.text_highlight {
+    color: var(--highlight_text_color);
+}
+
 /* ---------------------------------------------------------------- Background Divs + Card */
 
 * {
@@ -250,7 +314,6 @@ body {
     background-color: var(--widget_color_2);
     border-radius: 5px;
     border: none;
-    color: var(--text_color);
     display: inline-block;
     vertical-align: bottom;
     min-width: 30px;
@@ -263,7 +326,7 @@ body {
     margin: 0 2px;
 }
 .result {
-    background-color: var(--widget_color_3) !important;
+    background-color: var(--widget_color_3);
 }
 .keyword {
     font-weight: bold;

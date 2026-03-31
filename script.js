@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
         setAccent(savedAccent); // Calles the setAccent function with the found/saved accent
     }
 
+    // HIGHLIGHT STORAGE
+    let savedHighlight = localStorage.getItem('selectedHighlight'); // Look into browser storage and saves "selectedHighlight" into var
+    if (savedHighlight) { // If a saved theme exists
+        setHighlight(savedHighlight); // Calles the setHighlight function with the found/saved Highlight
+    }
+
     // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
         <link rel="icon" type="image/x-icon" href="faviconWeinFormeln.png">
@@ -190,7 +196,7 @@ function setAccent(accent) {
         root.style.setProperty('--accent_card_color_4', 'yellow');
     }
 }
-highlight_switch = "on";
+
 function highlight(highlight_switch) {
     let root = document.documentElement;
     localStorage.setItem('selectedHighlight', highlight_switch);

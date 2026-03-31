@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
                     <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>
                     <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('cmy')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/accent/cmy.png" alt="Vibrant Accent Color Icone">Alternativ Accent</a></li>
                     <li class="navigation_bar_dropdown_devider"></li>
-                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="highlight('highlight_on')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/navigation_bar/text_marker.png" alt="Text Marker Icone">Highlight</a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="highlight()"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/navigation_bar/text_marker.png" alt="Text Marker Icone">Highlight</a></li>
                 </ul>
             </li>
         </ul>`;
@@ -189,6 +189,37 @@ function setAccent(accent) {
         root.style.setProperty('--accent_card_color_3', 'magenta');
         root.style.setProperty('--accent_card_color_4', 'yellow');
     }
+}
+highlight_switch = "on";
+function highlight(highlight_switch) {
+    let root = document.documentElement;
+    localStorage.setItem('selectedHighlight', highlight_switch);
+
+    if (highlight_switch === "off") {
+        root.style.setProperty('--highlight_color_1', '#ECFF2B');
+        root.style.setProperty('--highlight_color_2', '#3AE4FF');
+        root.style.setProperty('--highlight_color_3', '#FF46FF');
+        root.style.setProperty('--highlight_color_4', '#FF6500');
+        root.style.setProperty('--highlight_color_5', '#33FF42');
+        root.style.setProperty('--highlight_color_6', '#BE8FFF');
+        root.style.setProperty('--highlight_color_7', '#FF3A37');
+        root.style.setProperty('--highlight_color_8', '#7CFF9F');
+        root.style.setProperty('--highlight_color_9', '#6668FF');
+        highlight_switch = "on";
+    } else if (highlight_switch === "on") {
+        root.style.setProperty('--highlight_color_1', 'white');
+        root.style.setProperty('--highlight_color_2', 'white');
+        root.style.setProperty('--highlight_color_3', 'white');
+        root.style.setProperty('--highlight_color_4', 'white');
+        root.style.setProperty('--highlight_color_5', 'white');
+        root.style.setProperty('--highlight_color_6', 'white');
+        root.style.setProperty('--highlight_color_7', 'white');
+        root.style.setProperty('--highlight_color_8', 'white');
+        root.style.setProperty('--highlight_color_9', 'white');
+        highlight_switch = "off";
+    }
+    
+
 }
 
 let commaOrDot = "";

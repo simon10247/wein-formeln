@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
     }
 
     // HIGHLIGHT STORAGE
-    let savedHighlight = localStorage.getItem('selectedHighlight'); // Look into browser storage and saves "selectedHighlight" into var
-    if (savedHighlight) {highlight()} // If a saved theme exists
+    let savedHighlight = localStorage.getItem('selectedHighlight') || "off"; // Look into browser storage and saves "selectedHighlight" into var
+    setHighlight(savedHighlight);
 
     // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
@@ -195,10 +195,8 @@ function setAccent(accent) {
     }
 }
 
-function highlight() {
+function setHighlight(highlight) {
     let root = document.documentElement;
-    let selectedHighlight = localStorage.getItem('selectedHighlight' || 'off');
-    let highlight = (selectedHighlight === 'off') ? 'on' : 'off'; // If ? true : false -- If highlight is off, set highlight to on. If highlight is on, set highlight to off.
     if (highlight === 'on') {
         root.style.setProperty('--highlight_color_1', '#ECFF2B');
         root.style.setProperty('--highlight_color_2', '#3AE4FF');
@@ -220,7 +218,14 @@ function highlight() {
         root.style.setProperty('--highlight_color_8', '#ffffff');
         root.style.setProperty('--highlight_color_9', '#ffffff');
     }
-    localStorage.setItem('selectedHighlight', highlight);
+}
+
+function toggleHighlight() {
+    let currentHighlightState = localStorage.getItem('savedHighlight') || 'off';
+    let newHighlightState = (currentHighlightState === 'on') ? 'off' : 'on';
+
+    localStorage.setItem('savedHighlight', newHighlightState);
+    setHighlight(newHighlightState);
 }
 
 let commaOrDot = "";

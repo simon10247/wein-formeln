@@ -27,9 +27,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
 
     // HIGHLIGHT STORAGE
     let savedHighlight = localStorage.getItem('selectedHighlight'); // Look into browser storage and saves "selectedHighlight" into var
-    if (savedHighlight) { // If a saved theme exists
-        setHighlight(savedHighlight); // Calles the setHighlight function with the found/saved Highlight
-    }
+    if (savedHighlight) {highlight()} // If a saved theme exists
 
     // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
@@ -197,11 +195,11 @@ function setAccent(accent) {
     }
 }
 
-function highlight(highlight_switch) {
+function highlight() {
     let root = document.documentElement;
-    localStorage.setItem('selectedHighlight', highlight_switch);
-
-    if (highlight_switch === "off") {
+    let selectedHighlight = localStorage.getItem('selectedHighlight' || 'off');
+    let highlight = (selectedHighlight === 'off') ? 'on' : 'off'; // If ? true : false -- If highlight is off, set highlight to on. If highlight is on, set highlight to off.
+    if (highlight === 'on') {
         root.style.setProperty('--highlight_color_1', '#ECFF2B');
         root.style.setProperty('--highlight_color_2', '#3AE4FF');
         root.style.setProperty('--highlight_color_3', '#FF46FF');
@@ -211,21 +209,18 @@ function highlight(highlight_switch) {
         root.style.setProperty('--highlight_color_7', '#FF3A37');
         root.style.setProperty('--highlight_color_8', '#7CFF9F');
         root.style.setProperty('--highlight_color_9', '#6668FF');
-        highlight_switch = "on";
-    } else if (highlight_switch === "on") {
-        root.style.setProperty('--highlight_color_1', 'white');
-        root.style.setProperty('--highlight_color_2', 'white');
-        root.style.setProperty('--highlight_color_3', 'white');
-        root.style.setProperty('--highlight_color_4', 'white');
-        root.style.setProperty('--highlight_color_5', 'white');
-        root.style.setProperty('--highlight_color_6', 'white');
-        root.style.setProperty('--highlight_color_7', 'white');
-        root.style.setProperty('--highlight_color_8', 'white');
-        root.style.setProperty('--highlight_color_9', 'white');
-        highlight_switch = "off";
+    } else {
+        root.style.setProperty('--highlight_color_1', '#ffffff');
+        root.style.setProperty('--highlight_color_2', '#ffffff');
+        root.style.setProperty('--highlight_color_3', '#ffffff');
+        root.style.setProperty('--highlight_color_4', '#ffffff');
+        root.style.setProperty('--highlight_color_5', '#ffffff');
+        root.style.setProperty('--highlight_color_6', '#ffffff');
+        root.style.setProperty('--highlight_color_7', '#ffffff');
+        root.style.setProperty('--highlight_color_8', '#ffffff');
+        root.style.setProperty('--highlight_color_9', '#ffffff');
     }
-    
-
+    localStorage.setItem('selectedHighlight', highlight);
 }
 
 let commaOrDot = "";

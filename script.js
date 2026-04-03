@@ -223,7 +223,7 @@ function setHighlight(highlight) {
 }
 
 function toggleHighlight() {
-    let currentHighlightState = localStorage.getItem('savedHighlight') || 'off';
+    let currentHighlightState = localStorage.getItem('selectedHighlight') || 'off';
     let newHighlightState = (currentHighlightState === 'on') ? 'off' : 'on';
 
     localStorage.setItem('selectedHighlight', newHighlightState);

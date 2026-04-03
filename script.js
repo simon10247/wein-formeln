@@ -13,24 +13,6 @@ function show_text(text_class, button_class) { // Normal function (Called by HTM
 
 document.addEventListener("DOMContentLoaded", () => { // This code is executed, when the html page is finished loading
 
-    // THEME STORAGE
-    let savedTheme = localStorage.getItem('selectedTheme'); // Look into browser storage and saves "selectedTheme" into var
-    if (savedTheme) { // If a saved theme exists
-        setTheme(savedTheme); // Calles the setTheme function with the found/saved theme
-    }
-
-    // ACCENT STORAGE
-    let savedAccent = localStorage.getItem('selectedAccent'); // Look into browser storage and saves "selectedAccent" into var
-    if (savedAccent) { // If a saved theme exists
-        setAccent(savedAccent); // Calles the setAccent function with the found/saved accent
-    }
-
-    // HIGHLIGHT STORAGE
-    let savedHighlight = localStorage.getItem('selectedHighlight') || 'off'; // Look into browser storage and saves "selectedHighlight" into var
-    if (savedHighlight === "on") {
-        setHighlight(savedHighlight);
-    }
-
     // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
         <link rel="icon" type="image/x-icon" href="faviconWeinFormeln.png">
@@ -77,6 +59,24 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
                 </ul>
             </li>
         </ul>`;
+
+    // THEME STORAGE
+    let savedTheme = localStorage.getItem('selectedTheme'); // Look into browser storage and saves "selectedTheme" into var
+    if (savedTheme) { // If a saved theme exists
+        setTheme(savedTheme); // Calles the setTheme function with the found/saved theme
+    }
+
+    // ACCENT STORAGE
+    let savedAccent = localStorage.getItem('selectedAccent'); // Look into browser storage and saves "selectedAccent" into var
+    if (savedAccent) { // If a saved theme exists
+        setAccent(savedAccent); // Calles the setAccent function with the found/saved accent
+    }
+
+    // HIGHLIGHT STORAGE
+    let savedHighlight = localStorage.getItem('selectedHighlight') || 'off'; // Look into browser storage and saves "selectedHighlight" into var
+    if (savedHighlight === "on") {
+        setHighlight(savedHighlight);
+    }
 
     // INJECT ATTRIBUTES INTO HTML SPANES
     document.querySelectorAll('.input_span').forEach((inputSpan) => {   // Finds all spans and allows them to be editable

@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
                     <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('soft')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/accent/soft.png" alt="Vibrant Accent Color Icone">Soft Accent</a></li>
                     <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="setAccent('cmy')"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/accent/cmy.png" alt="Vibrant Accent Color Icone">Alternativ Accent</a></li>
                     <li class="navigation_bar_dropdown_devider"></li>
-                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="toggleHighlight()"><img class="navigation_bar_icon navigation_bar_dropdown_icon" src="icon/navigation_bar/text_marker.png" alt="Text Marker Icone"><span class="highlight_1">Highlight</span></a></li>
+                    <li><a class="navigation_bar_hover" href="javascript:void(0)" onclick="toggleHighlight()"><img class="navigation_bar_icon navigation_bar_dropdown_icon" id="highlight_icon" src="icon/navigation_bar/highlight/text_marker.png" alt="Text Marker Icone"><span class="highlight_1">Highlight</span></a></li>
                 </ul>
             </li>
         </ul>`;
@@ -201,6 +201,7 @@ function setAccent(accent) {
 
 function setHighlight(highlight) {
     let root = document.documentElement;
+    let icon = document.getElementById('highlight_icon');
     if (highlight === 'on' && localStorage.getItem('selectedAccent') !== 'cmy') {
         root.style.setProperty('--highlight_color_text_1', 'var(--highlight_color_1)');
         root.style.setProperty('--highlight_color_text_2', 'var(--highlight_color_2)');
@@ -233,6 +234,8 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_result_9', 'var(--highlight_color_9)');
 
         root.style.setProperty('--highlight_text_color', 'black');
+
+        icon.src = 'icon/navigation_bar/highlight/text_marker_active.png';
     }
     else if (highlight === 'on' && localStorage.getItem('selectedAccent') === 'cmy') {
         root.style.setProperty('--highlight_color_text_1', 'var(--highlight_color_9)');
@@ -266,6 +269,8 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_result_9', 'var(--highlight_color_1)');
 
         root.style.setProperty('--highlight_text_color', 'black');
+
+        icon.src = 'icon/navigation_bar/highlight/text_marker_active_2.png';
     }
     else {
         root.style.setProperty('--highlight_color_text_1', '#ffffff');
@@ -299,6 +304,8 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_result_9', 'var(--result_color)');
 
         root.style.setProperty('--highlight_text_color', 'var(--text_color)');
+
+        icon.src = 'icon/navigation_bar/highlight/text_marker.png';
     }
 }
 

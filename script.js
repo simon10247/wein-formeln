@@ -209,6 +209,26 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_7', '#FF3A37');
         root.style.setProperty('--highlight_color_8', '#7CFF9F');
         root.style.setProperty('--highlight_color_9', '#6668FF');
+
+        root.style.setProperty('--highlight_color_input_1', '#ECFF2B');
+        root.style.setProperty('--highlight_color_input_2', '#3AE4FF');
+        root.style.setProperty('--highlight_color_input_3', '#FF46FF');
+        root.style.setProperty('--highlight_color_input_4', '#FF6500');
+        root.style.setProperty('--highlight_color_input_5', '#33FF42');
+        root.style.setProperty('--highlight_color_input_6', '#BE8FFF');
+        root.style.setProperty('--highlight_color_input_7', '#FF3A37');
+        root.style.setProperty('--highlight_color_input_8', '#7CFF9F');
+        root.style.setProperty('--highlight_color_input_9', '#6668FF');
+
+        root.style.setProperty('--highlight_color_result_1', '#ECFF2B');
+        root.style.setProperty('--highlight_color_result_2', '#3AE4FF');
+        root.style.setProperty('--highlight_color_result_3', '#FF46FF');
+        root.style.setProperty('--highlight_color_result_4', '#FF6500');
+        root.style.setProperty('--highlight_color_result_5', '#33FF42');
+        root.style.setProperty('--highlight_color_result_6', '#BE8FFF');
+        root.style.setProperty('--highlight_color_result_7', '#FF3A37');
+        root.style.setProperty('--highlight_color_result_8', '#7CFF9F');
+        root.style.setProperty('--highlight_color_result_9', '#6668FF');
     } else {
         root.style.setProperty('--highlight_color_1', '#ffffff');
         root.style.setProperty('--highlight_color_2', '#ffffff');
@@ -219,6 +239,26 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_7', '#ffffff');
         root.style.setProperty('--highlight_color_8', '#ffffff');
         root.style.setProperty('--highlight_color_9', '#ffffff');
+
+        root.style.setProperty('--highlight_color_input_1', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_2', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_3', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_4', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_5', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_6', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_7', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_8', 'var(--input_color)');
+        root.style.setProperty('--highlight_color_input_9', 'var(--input_color)');
+
+        root.style.setProperty('--highlight_color_result_1', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_2', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_3', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_4', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_5', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_6', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_7', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_8', 'var(--result_color)');
+        root.style.setProperty('--highlight_color_result_9', 'var(--result_color)');
     }
 }
 

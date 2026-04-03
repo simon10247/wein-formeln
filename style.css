@@ -41,10 +41,30 @@ COLORS FOR COLORCODEING
     --highlight_color_8: white;
     --highlight_color_9: white;
 
+    --highlight_color_input_1: var(--input_color);
+    --highlight_color_input_2: var(--input_color);
+    --highlight_color_input_3: var(--input_color);
+    --highlight_color_input_4: var(--input_color);
+    --highlight_color_input_5: var(--input_color);
+    --highlight_color_input_6: var(--input_color);
+    --highlight_color_input_7: var(--input_color);
+    --highlight_color_input_8: var(--input_color);
+    --highlight_color_input_9: var(--input_color);
+
+    --highlight_color_result_1: var(--result_color);
+    --highlight_color_result_2: var(--result_color);
+    --highlight_color_result_3: var(--result_color);
+    --highlight_color_result_4: var(--result_color);
+    --highlight_color_result_5: var(--result_color);
+    --highlight_color_result_6: var(--result_color);
+    --highlight_color_result_7: var(--result_color);
+    --highlight_color_result_8: var(--result_color);
+    --highlight_color_result_9: var(--result_color);
+
     --highlight_text_color: #000000;
 
-    --input_color: var(var(--widget_color_2));
-    --result_color: var(var(--widget_color_3));
+    --input_color: var(--widget_color_2);
+    --result_color: var(--widget_color_3);
 }
 
 body {
@@ -189,31 +209,59 @@ body {
 }
 
 .highlight_input_1 {
-    background-color: var(--highlight_color_1) !important;
+    background-color: var(--highlight_color_input_1) !important;
 }
 .highlight_input_2 {
-    background-color: var(--highlight_color_2) !important;
+    background-color: var(--highlight_color_input_2) !important;
 }
 .highlight_input_3 {
-    background-color: var(--highlight_color_3) !important;
+    background-color: var(--highlight_color_input_3) !important;
 }
 .highlight_input_4 {
-    background-color: var(--highlight_color_4) !important;
+    background-color: var(--highlight_color_input_4) !important;
 }
 .highlight_input_5 {
-    background-color: var(--highlight_color_5) !important;
+    background-color: var(--highlight_color_input_5) !important;
 }
 .highlight_input_6 {
-    background-color: var(--highlight_color_6) !important;
+    background-color: var(--highlight_color_input_6) !important;
 }
 .highlight_input_7 {
-    background-color: var(--highlight_color_7) !important;
+    background-color: var(--highlight_color_input_7) !important;
 }
 .highlight_input_8 {
-    background-color: var(--highlight_color_8) !important;
+    background-color: var(--highlight_color_input_8) !important;
 }
 .highlight_input_9 {
-    background-color: var(--highlight_color_9) !important;
+    background-color: var(--highlight_color_input_9) !important;
+}
+
+.highlight_result_1 {
+    background-color: var(--highlight_color_result_1) !important;
+}
+.highlight_result_2 {
+    background-color: var(--highlight_color_result_2) !important;
+}
+.highlight_result_3 {
+    background-color: var(--highlight_color_result_3) !important;
+}
+.highlight_result_4 {
+    background-color: var(--highlight_color_result_4) !important;
+}
+.highlight_result_5 {
+    background-color: var(--highlight_color_result_5) !important;
+}
+.highlight_result_6 {
+    background-color: var(--highlight_color_result_6) !important;
+}
+.highlight_result_7 {
+    background-color: var(--highlight_color_result_7) !important;
+}
+.highlight_result_8 {
+    background-color: var(--highlight_color_result_8) !important;
+}
+.highlight_result_9 {
+    background-color: var(--highlight_color_result_9) !important;
 }
 
 .text_highlight {

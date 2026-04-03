@@ -61,7 +61,7 @@ COLORS FOR COLORCODEING
     --highlight_color_result_8: var(--result_color);
     --highlight_color_result_9: var(--result_color);
 
-    --highlight_text_color: #000000;
+    --highlight_text_color: var(--text_color);
 
     --input_color: var(--widget_color_2);
     --result_color: var(--widget_color_3);

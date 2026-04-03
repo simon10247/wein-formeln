@@ -231,6 +231,8 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_result_7', '#FF3A37');
         root.style.setProperty('--highlight_color_result_8', '#7CFF9F');
         root.style.setProperty('--highlight_color_result_9', '#6668FF');
+
+        root.style.setProperty('--highlight_text_color', 'black');
     }
     else if (highlight === 'on' && localStorage.getItem('selectedAccent') === 'cmy') {
         root.style.setProperty('--highlight_color_1', '#6668FF');
@@ -262,6 +264,8 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_result_7', '#FF46FF');
         root.style.setProperty('--highlight_color_result_8', '#3AE4FF');
         root.style.setProperty('--highlight_color_result_9', '#ECFF2B');
+
+        root.style.setProperty('--highlight_text_color', 'black');
     }
     else {
         root.style.setProperty('--highlight_color_1', '#ffffff');
@@ -293,6 +297,8 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_color_result_7', 'var(--result_color)');
         root.style.setProperty('--highlight_color_result_8', 'var(--result_color)');
         root.style.setProperty('--highlight_color_result_9', 'var(--result_color)');
+
+        root.style.setProperty('--highlight_text_color', 'var(--text_color)');
     }
 }
 

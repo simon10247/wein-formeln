@@ -311,7 +311,7 @@ body {
     display: none;
 }
 .input, .result {
-        border-radius: 5px;
+    border-radius: 5px;
     border: none;
     display: inline-block;
     vertical-align: bottom;

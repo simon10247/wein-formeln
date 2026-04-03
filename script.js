@@ -202,15 +202,15 @@ function setAccent(accent) {
 function setHighlight(highlight) {
     let root = document.documentElement;
     if (highlight === 'on' && localStorage.getItem('selectedAccent') !== 'cmy') {
-        root.style.setProperty('--highlight_color_1', '#ECFF2B');
-        root.style.setProperty('--highlight_color_2', '#3AE4FF');
-        root.style.setProperty('--highlight_color_3', '#FF46FF');
-        root.style.setProperty('--highlight_color_4', '#FF6500');
-        root.style.setProperty('--highlight_color_5', '#33FF42');
-        root.style.setProperty('--highlight_color_6', '#BE8FFF');
-        root.style.setProperty('--highlight_color_7', '#FF3A37');
-        root.style.setProperty('--highlight_color_8', '#7CFF9F');
-        root.style.setProperty('--highlight_color_9', '#6668FF');
+        root.style.setProperty('--highlight_color_text_1', '#ECFF2B');
+        root.style.setProperty('--highlight_color_text_2', '#3AE4FF');
+        root.style.setProperty('--highlight_color_text_3', '#FF46FF');
+        root.style.setProperty('--highlight_color_text_4', '#FF6500');
+        root.style.setProperty('--highlight_color_text_5', '#33FF42');
+        root.style.setProperty('--highlight_color_text_6', '#BE8FFF');
+        root.style.setProperty('--highlight_color_text_7', '#FF3A37');
+        root.style.setProperty('--highlight_color_text_8', '#7CFF9F');
+        root.style.setProperty('--highlight_color_text_9', '#6668FF');
 
         root.style.setProperty('--highlight_color_input_1', '#ECFF2B');
         root.style.setProperty('--highlight_color_input_2', '#3AE4FF');
@@ -235,15 +235,15 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_text_color', 'black');
     }
     else if (highlight === 'on' && localStorage.getItem('selectedAccent') === 'cmy') {
-        root.style.setProperty('--highlight_color_1', '#6668FF');
-        root.style.setProperty('--highlight_color_2', '#7CFF9F');
-        root.style.setProperty('--highlight_color_3', '#FF3A37');
-        root.style.setProperty('--highlight_color_4', '#BE8FFF');
-        root.style.setProperty('--highlight_color_5', '#33FF42');
-        root.style.setProperty('--highlight_color_6', '#FF6500');
-        root.style.setProperty('--highlight_color_7', '#FF46FF');
-        root.style.setProperty('--highlight_color_8', '#3AE4FF');
-        root.style.setProperty('--highlight_color_9', '#ECFF2B');
+        root.style.setProperty('--highlight_color_text_1', '#6668FF');
+        root.style.setProperty('--highlight_color_text_2', '#7CFF9F');
+        root.style.setProperty('--highlight_color_text_3', '#FF3A37');
+        root.style.setProperty('--highlight_color_text_4', '#BE8FFF');
+        root.style.setProperty('--highlight_color_text_5', '#33FF42');
+        root.style.setProperty('--highlight_color_text_6', '#FF6500');
+        root.style.setProperty('--highlight_color_text_7', '#FF46FF');
+        root.style.setProperty('--highlight_color_text_8', '#3AE4FF');
+        root.style.setProperty('--highlight_color_text_9', '#ECFF2B');
 
         root.style.setProperty('--highlight_color_input_1', '#6668FF');
         root.style.setProperty('--highlight_color_input_2', '#7CFF9F');
@@ -268,15 +268,15 @@ function setHighlight(highlight) {
         root.style.setProperty('--highlight_text_color', 'black');
     }
     else {
-        root.style.setProperty('--highlight_color_1', '#ffffff');
-        root.style.setProperty('--highlight_color_2', '#ffffff');
-        root.style.setProperty('--highlight_color_3', '#ffffff');
-        root.style.setProperty('--highlight_color_4', '#ffffff');
-        root.style.setProperty('--highlight_color_5', '#ffffff');
-        root.style.setProperty('--highlight_color_6', '#ffffff');
-        root.style.setProperty('--highlight_color_7', '#ffffff');
-        root.style.setProperty('--highlight_color_8', '#ffffff');
-        root.style.setProperty('--highlight_color_9', '#ffffff');
+        root.style.setProperty('--highlight_color_text_1', '#ffffff');
+        root.style.setProperty('--highlight_color_text_2', '#ffffff');
+        root.style.setProperty('--highlight_color_text_3', '#ffffff');
+        root.style.setProperty('--highlight_color_text_4', '#ffffff');
+        root.style.setProperty('--highlight_color_text_5', '#ffffff');
+        root.style.setProperty('--highlight_color_text_6', '#ffffff');
+        root.style.setProperty('--highlight_color_text_7', '#ffffff');
+        root.style.setProperty('--highlight_color_text_8', '#ffffff');
+        root.style.setProperty('--highlight_color_text_9', '#ffffff');
 
         root.style.setProperty('--highlight_color_input_1', 'var(--input_color)');
         root.style.setProperty('--highlight_color_input_2', 'var(--input_color)');

@@ -31,15 +31,17 @@ COLORS FOR COLORCODEING
     --accent_card_color_3: LimeGreen;
     --accent_card_color_4: DodgerBlue;
 
-    --highlight_color_1: white;
-    --highlight_color_2: white;
-    --highlight_color_3: white;
-    --highlight_color_4: white;
-    --highlight_color_5: white;
-    --highlight_color_6: white;
-    --highlight_color_7: white;
-    --highlight_color_8: white;
-    --highlight_color_9: white;
+
+
+    --highlight_color_text_1: white;
+    --highlight_color_text_2: white;
+    --highlight_color_text_3: white;
+    --highlight_color_text_4: white;
+    --highlight_color_text_5: white;
+    --highlight_color_text_6: white;
+    --highlight_color_text_7: white;
+    --highlight_color_text_8: white;
+    --highlight_color_text_9: white;
 
     --highlight_color_input_1: var(--input_color);
     --highlight_color_input_2: var(--input_color);
@@ -181,31 +183,31 @@ body {
 /* ----------------------------------------------------------------  Highlighted Text */
 
 .highlight_1 {
-    color: var(--highlight_color_1);
+    color: var(--highlight_color_text_1);
 }
 .highlight_2 {
-    color: var(--highlight_color_2);
+    color: var(--highlight_color_text_2);
 }
 .highlight_3 {
-    color: var(--highlight_color_3);
+    color: var(--highlight_color_text_3);
 }
 .highlight_4 {
-    color: var(--highlight_color_4);
+    color: var(--highlight_color_text_4);
 }
 .highlight_5 {
-    color: var(--highlight_color_5);
+    color: var(--highlight_color_text_5);
 }
 .highlight_6 {
-    color: var(--highlight_color_6);
+    color: var(--highlight_color_text_6);
 }
 .highlight_7 {
-    color: var(--highlight_color_7);
+    color: var(--highlight_color_text_7);
 }
 .highlight_8 {
-    color: var(--highlight_color_8);
+    color: var(--highlight_color_text_8);
 }
 .highlight_9 {
-    color: var(--highlight_color_9);
+    color: var(--highlight_color_text_9);
 }
 
 .highlight_input_1 {

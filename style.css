@@ -310,9 +310,8 @@ body {
 .hidden_text {
     display: none;
 }
-.input {
-    background-color: var(--widget_color_2);
-    border-radius: 5px;
+.input, .result {
+        border-radius: 5px;
     border: none;
     display: inline-block;
     vertical-align: bottom;
@@ -324,6 +323,9 @@ body {
     padding-right: 5px;
     line-height: 1.2;
     margin: 0 2px;
+}
+.input {
+    background-color: var(--widget_color_2);
 }
 .result {
     background-color: var(--widget_color_3);

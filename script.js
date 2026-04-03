@@ -26,8 +26,10 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
     }
 
     // HIGHLIGHT STORAGE
-    let savedHighlight = localStorage.getItem('selectedHighlight') || "off"; // Look into browser storage and saves "selectedHighlight" into var
-    toggleHighlight(savedHighlight);
+    let savedHighlight = localStorage.getItem('selectedHighlight') || 'off'; // Look into browser storage and saves "selectedHighlight" into var
+    if (savedHighlight === "on") {
+        setHighlight(savedHighlight);
+    }
 
     // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
@@ -224,7 +226,7 @@ function toggleHighlight() {
     let currentHighlightState = localStorage.getItem('savedHighlight') || 'off';
     let newHighlightState = (currentHighlightState === 'on') ? 'off' : 'on';
 
-    localStorage.setItem('savedHighlight', newHighlightState);
+    localStorage.setItem('selectedHighlight', newHighlightState);
     setHighlight(newHighlightState);
 }
 

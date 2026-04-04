@@ -444,7 +444,7 @@ body {
         padding: 10px;
         border: 1px solid rgba(255, 255, 255, 0.1); 
     }
-    .input {
+    .input, .result {
         font-size: 15px;
         min-width: 25px;
     }

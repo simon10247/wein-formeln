@@ -15,31 +15,70 @@
     <div id="navigation_bar_injection"></div> <!-- Navigation Bar -->
 
     <div class="main">
+<!-- -------------------------------------------------------- Title -------------------------------------------------------- -->
         <h1 class="title">Natürlicher Alkohol</h1> <!-- Title -->
+<!-- -------------------------------------------------------- /Title -------------------------------------------------------- -->
+
+
 
         <div class="card_view description_card_accent"> <!-- Description -->
-            <p class="description">Der <span class="description_accent">natürlicher Alkohol</span> ist der Alkohol der bei der Gärung aus dem natürlich in der Traube vorhanden Zucker entsteht.<br>Er lässt sich aus den Öchsle unter dem Abzug des Extraktes berechnen.</p>
+<!-- -------------------------------------------------------- Description -------------------------------------------------------- -->
+            <p class="description">
+                Der <span class="description_accent">natürlicher Alkohol</span> ist der Alkohol der bei der Gärung aus dem natürlich in der Traube vorhanden Zucker entsteht.
+                <br>Er lässt sich aus den Öchsle unter dem Abzug des Extraktes berechnen.
+            </p>
+<!-- -------------------------------------------------------- /Description -------------------------------------------------------- -->
         </div>
+
+
 
         <div class="card_view formula_card_accent"> <!-- Formula -->
             <h2 class="formula_accent">Formel:</h2> <!-- Symbols: + - × ÷ -->
-            <p class="formula"><span class="highlight_1">°Oe</span> × 1,25 - <span class="highlight_2">E</span> × 0,5 = <span class="highlight_3">nA</span></p>
+<!-- -------------------------------------------------------- Formula -------------------------------------------------------- -->
+            <p class="formula">
+                <span class="highlight_1">°Oe</span> × 1,25 - <span class="highlight_2">E</span> × 0,5 = <span class="highlight_3">nA</span>
+            </p>
+
             <pre class="horizontal_scroll monospace" style="margin-top: 20px;"><span class="keyword">°Oe</span> = <span class="keyword highlight_1">Öchsle</span> in °Oe<br><span class="keyword">E</span>   = <span class="keyword highlight_2">Extrakt</span> in g/l<br><span class="keyword">nA</span>  = <span class="keyword highlight_3">natürlicher Alkohol</span><a href="" title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</a> in g/l</pre>
+<!-- -------------------------------------------------------- /Formula -------------------------------------------------------- -->
         </div>
+
+
 
         <div class="card_view calculator_card_accent"> <!-- Calculator -->
             <h2 class="calculator_accent">Rechner:</h2>
-            <p class="horizontal_scroll"><span class="input input_span highlight_input_1 text_highlight" id="oechsle"></span> °Oe × 1,25 - <span class="input input_span highlight_input_2 text_highlight" id="extract"></span> g/l × 0,5 = <span class="result_span result input_span highlight_result_3 text_highlight" id="natural_alkohol"></span> g/l</p>
+<!-- -------------------------------------------------------- Calculator -------------------------------------------------------- -->
+            <p class="horizontal_scroll">
+                <span class="input input_span highlight_input_1 text_highlight" id="oechsle"></span>
+                  °Oe × 1,25 - 
+                 <span class="input input_span highlight_input_2 text_highlight" id="extract"></span>
+                   g/l × 0,5 = 
+                  <span class="result_span result input_span highlight_result_3 text_highlight" id="natural_alkohol"></span>
+                   g/l
+            </p>
+<!-- -------------------------------------------------------- /Calculator -------------------------------------------------------- -->
             <button class="button" onclick="calculation()">Berechnen</button>
         </div>
 
+
+
         <div class="card_view example_task_card_accent"> <!-- Example Task -->
             <h2 class="example_task_accent">Beispiel Aufgabe:</h2>
-            <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat <span class="highlight_1">82°&nbsp;Öchsle</span> und eine <span class="highlight_2">Extrakt von 21&nbsp;g/l</span>. Du möchtest eine Alkohol von mindestens 12,5&nbsp;%vol. haben.<br>Wie hoch ist der <span class="highlight_3">natürliche Alkohol in g/l</span> und musst du deinen Most noch anreichern?</p>
+<!-- -------------------------------------------------------- Example Task -------------------------------------------------------- -->
+            <p class="example_task">
+                Du untersuchst deinen Riesling Most, dieser hat <span class="highlight_1">82°&nbsp;Öchsle</span> und eine <span class="highlight_2">Extrakt von 21&nbsp;g/l</span>. Du möchtest eine Alkohol von mindestens 12,5&nbsp;%vol. haben.
+                <br>Wie hoch ist der <span class="highlight_3">natürliche Alkohol in g/l</span> und musst du deinen Most noch anreichern?
+            </p>
+
             <button class="button button_awnser" onclick="show_text('hidden_awnser', 'button_awnser')">Lösung Anzeigen</button>
             <button class="button button_formula" onclick="show_text('hidden_formula', 'button_formula')">Lösungsweg Anzeigen</button>
-            <p class="hidden_awnser hidden_text">Dein Riesling Most hat einen <span class="highlight_3">natürlichen Alkohol von <b>92&nbsp;g/l</b></span>, dass sind 11,66&nbsp;%vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5&nbsp;%vol. zu kommen.</p>
+
+            <p class="hidden_awnser hidden_text">
+                Dein Riesling Most hat einen <span class="highlight_3">natürlichen Alkohol von <b>92&nbsp;g/l</b></span>, dass sind 11,66&nbsp;%vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5&nbsp;%vol. zu kommen.
+            </p>
+            
             <pre class="hidden_formula hidden_text horizontal_scroll monospace" style="padding-bottom: 10px;"><span class="highlight_1">82° Oe</span> × 1,25 - <span class="highlight_2">21 g/l</span> × 0,5  = <span class="highlight_3"><b>92 g/l</b></span><br>92 g/l ÷ 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b></pre>
+<!-- -------------------------------------------------------- /Example Task -------------------------------------------------------- -->
         </div>
     </div>
 </body>

@@ -167,8 +167,8 @@ function setTheme(theme) {
         root.style.setProperty('--secondary_background_color', '#2B1859');
         root.style.setProperty('--widget_color', '#180E33');
         root.style.setProperty('--widget_hover_color', '#06030C');
-        root.style.setProperty('--widget_color_2', '#361e72');
-        root.style.setProperty('--widget_color_3', '#2c195c');
+        root.style.setProperty('--widget_color_2', '#422883');
+        root.style.setProperty('--widget_color_3', '#341e6b');
         root.style.setProperty('--card_color', '#0f0920');
         root.style.setProperty('--title_color', '#ffffff');
         root.style.setProperty('--text_color', '#ffffff');
